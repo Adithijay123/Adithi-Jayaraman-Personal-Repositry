@@ -1,0 +1,10 @@
+Python Project 
+1. Currency Converter - https://data-flair.training/blogs/currency-converter-python/
+2. Text-to-speech Converter - https://data-flair.training/blogs/python-text-to-speech/
+Python Django Project 
+3. Discussion Forums - https://data-flair.training/blogs/discussion-forum-python-django/
+Machine Learning Project
+4. Hard-written digit Identifier - https://data-flair.training/blogs/python-deep-learning-project-handwritten-digit-recognition/
+5. Colour Detection - https://data-flair.training/blogs/project-in-python-colour-detection/
+Deep Learning 
+6. Image classification - https://data-flair.training/blogs/image-classification-deep-learning-project-python-keras/
