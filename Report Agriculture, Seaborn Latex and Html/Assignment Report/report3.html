@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset = "UTF-8">
+            <title>How does maintaining optimal humidity levels, alongside other enviromental factors, influence the crop’s value!</title>
+            <link rel = "stylesheet" href = "Style Sheet.css">
+        </head>
+        <body class = "grid-container">
+            <div class = "header">
+                <h2 style = "text-align: center; color: rgb(0, 0, 0);">
+                    <span style = "font-family: georgia">
+                        Agricultural Predictions <br>
+                    </span>
+                    <span style = "font-family: garamond">
+                      How does maintaining optimal humidity levels, alongside other enviromental factors, influence the crop’s value!
+                    </span>
+                </h2>
+                <p style = "text-align: center;color:rgb(16, 51, 22)">
+                    <br>
+                </p>
+            </div>
+
+            <div class = "content">
+                <hr class = "underline">
+
+                <h3 id = "Abstract"><u>
+                    Abstract
+                  </u></h3>
+                <p>
+                  This study explores the complex interplay between soil moisture, nutrient availability (N, P, K)[1], and crop profitability in the Indian agricultural context. Further, emphasizes the combined effects of soil moisture and environmental factors on nutrient dynamics, providing valuable insights for optimizing irrigation practices and maximizing agricultural profit in India. While the research indicates dependencies between these variables, the findings suggest that pinpointing a universal optimal ratio for maximum yield and profit is inconclusive due to the complex influence of numerous external factors.
+                </p>
+                <hr class = "underline">
+    
+                <h3 id = "Introduction"><u>
+                    Introduction
+                  </u></h3>
+                 <p>
+                  Millions of Indians depend on agriculture[2]. Despite agriculture's vital role in the nation's economy, suboptimal crop choices limit the maximum yield and profits for specific soil conditions. This research aims to empower these farmers by finding optimal crops for each soil condition by analyzing past data and profit margins. Exploring the link between optimal soil moisture and NPK allows for improved irrigation practices, resulting in increased crop yields, enhanced food security, and a flourishing agricultural sector in India[3]. Data from ICFA IBER[4] and Kaggle[5] will be employed to achieve these goals. This prediction the stakeholder to find the most suitable crop for his particular location.
+                 </p>
+                <p>
+                   Exploring the connection between optimal soil moisture levels and the availability of crucial nutrients NPK[1]. Aiming to empower farmers to manage irrigation practices effectively by data-driven insights and a deeper understanding of soil science. Thereby increasing crop yields, improving food security, and improving agricultural economy for India.
+                </p>
+                <p>
+                    The dataset "Crop Recommendation Dataset" was published by ICFA IBER of Food and Agriculture [4] by augmenting rainfall, climate, and fertilizer data available for India. Additionally, a database from Kaggle[5] is used to extrapolate data based on the price values of each crop and average NPK values to conclude how the nutrients and weather conditions might affect the financial profit from each crop. This allows the stakeholder to find the most suitable crops based on various parameters.
+                </p>
+                <hr class = "underline">
+    
+                <h3 id = "Literature Review"><u>
+                    Literature Review
+                  </u></h3>
+                <p>
+                  Exploring the critical roles of NPK and the influence of environmental factors on crop growth[6]. Emphasizing the complex interplay between these elements and their ultimate impact on crop yield. Micronutrients such as NPK play an essential role in the health and production of any crop.</p>
+                <p>
+                  <strong>Phosphorus (P):</strong>
+                 Plays a crucial role in flowering, seed production, photosynthesis, and overall plant growth[7]. Warmer temperatures favour P release, but excessively high temperatures can decrease soil moisture and hinder accessibility[8]. Moderate moisture is vital, as extreme rainfall can leach P, while dry conditions limit nutrient movement[9]
+                </p>
+                <p>
+                  <strong>Potassium (K):</strong>
+                  While its impact varies, it significantly influences plant growth and yield. Similar to P, it thrives in moder-ate soil moisture and warmer temperatures[10], [11].
+                </p>
+                <p>
+                  <strong>Nitrogen (N):</strong>
+                  Unlike P and K, low moisture can hinder nitrogen uptake by slowing down microbial activity that affects nitrogen mineralization. N transforms (mineralization, nitrification, immobilization) with different ideal temperatures; hence, there is no single ideal temperature [12].
+                </p>
+                <p>
+                  While N differs in its response to moisture compared to P and K, all three nutrients are significantly affected by the interplay of moisture and other environmental factors.
+                </p>
+                <p><strong>Soil pH:</strong> Affects nutrient availability, not total NPK amount. NPK is the total quantity of nutrients in the soil, regardless of plant access[13]. Therefore, while the total NPK value might remain constant, the usable amount of these nutrients for plants can vary significantly depending on the soil's pH level[14]. </p>
+                <p><strong>Rainfall: </strong>Affects soil moisture, influencing nutrient uptake and potentially leading to drought stress (insufficient) or waterlogging (excessive)[3] </p>
+                <p><strong>Humidity:</strong> : Doesn't change total NPK but can indirectly affect availability [15].High humidity: Boosts microbial activity, potentially releasing locked-up nutrients. And excessive humidity: Increases leaching, potentially removing nutrients. </p>
+                <p><strong> Temperature:</strong>  Directly influences plant growth and development, with deviations from the optimal range impacting pro-cesses like photosynthesis and pollination[12] </p>
+                <p>
+                    This intricate interaction between soil properties, water availability, and climate significantly impacts plant nutrient uptake and growth needs, ultimately affecting crop yield.
+                </p>
+                <hr class = "underline">
+
+                <h3 id = "Hypothesis "><u>
+                    Hypothesis
+                  </u></h3>
+                <p>
+                    As rainfall increases, soil moisture content will generally increase, leading to improved plant growth up to a certain point. However, excessive rainfall can leach away essential nutrients, potentially hindering plant growth if not replenished. Additionally, humidity levels may indirectly contribute to plant growth by reducing the evaporation rate from the soil, but its overall impact depends on factors like temperature
+                </p>
+
+
+                <hr class = "underline">
+
+                <h3 id = "Methods"><u>
+                    Methods
+                  </u></h3>
+                <p>
+                    Crop Recommendation Dataset[4], encompasses over 15,000 entries collected across 26 years. It includes various features pertinent to crop yields, such as humidity, temperature, soil pH, NPK, average rainfall, and the primary crop grown in each instance.
+                </p>
+
+                <p><center><img src="assets/dbmerge.png" width="600"></center></p>
+                <p><small><center>Image 1 - Cleaning of data </centre></small></p>
+                <p>
+                   Python libraries pandas, matplotlib, and seaborn [16] were used to explore potential correlations and dependencies between these factors[17]. Both datasets were merged into one for the average cost per crop type. This combined analysis facilitated the identification of ideal conditions for achieving high-yield and cost-effective crops.
+                </p>
+                <p><center><img src="assets/heatgraphcode.png" width="600"></center></p>
+                <p><small><center>Image 2 - correlation matrix code </centre></small></p>
+                <hr class = "underline">
+
+
+                <h3 id = "Results"><u>
+                    Results
+                  </u></h3>
+                <p><strong> Temperature vs Humidity </strong></p>
+                <p><center><img src="assets/TEMPVSHUM.png" alt="Scatter Plot"> </center></p>
+                <p><small><center>Graph 1 - Temprature vs Humidity </centre></small></p>
+                <p>
+                     Although there is no exponential and linear trend, strong square clusters and sharp lines are noticed[18]. These straight, sharp lines at (80 and 90 % of humidity) indicate a strong and direct relationship between temperature and humidity. In this humidity range, temperature changes may have a more predictable impact or vice versa. When data points are scattered with no clear groupings (30 – 50), it suggests a weak relationship between temperature and humidity. Changes in one variable do not consistently affect the other within this scattered region. This is like a trendline but for a smaller portion of the data.This could be due to limitations in the data collection process. If measurements were only taken at specific intervals (e.g., every 5 degrees and every 10% humidity), the points might cluster in squares reflecting these intervals.
+                </p>
+                <p><strong>pH vs Humidity  </strong></p>
+                <p>  <center><img src="assets/PHVSHUM.png" alt="Scatter Plot"></center></p>
+                <p><small><center>Graph 2 - pH vs Humidity </centre></small></p>
+                <p>
+                    Data points strongly clustered around 50% humidity suggest that pH and humidity are more tightly regulated in a specific process or environment. conditions[19]. pH changes tend to be smaller or more predictable. There are only a few Data Points Below pH 5. This could be because the data might be collected from an environment with a pH above 5. It's also possible that the measurement process has limitations in accurately capturing highly acidic environments (below pH 5). The data Break Between 30-40% Humidity could indicate that the measurements might have yet to be taken at even intervals across the entire humidity range. Perhaps readings were only collected at specific points, leading to a 30% and 40% gap. It's also possible that the specific conditions required for pH and humidity to fall within that range are uncommon in the environment being studied.
+                </p>
+                <p><strong>Heat graph </strong>
+                <p>  <center><img src="assets/cropprice.png" alt="heat plot"></center></p>
+                <p><small><center>Graph 4 - Heat Map (correlation coefficient) </centre></small></p>
+                <p>
+                0.75 correlation coefficient between soil P (phosphorus) and soil K (potassium) in a correlation matrix, then it indicates a moderately strong positive linear relationship between these two nutrients in the soil samples being analysed. A positive correlation coefficient[18] signifies that as the value of soil P increases, there's a tendency for the value of soil K to also increase. Conversely, if soil P decreases, soil K levels tend to de-crease as well. But the same way N's correlation along with P and K is negative and weak positive indicating that as these 2 increases N decreases. For instance, it may be that high pH leads to higher crop yields (and thus higher crop prices) but it may also be that farmers tend to add lime to soil with low pH, and that the lime itself is what causes the higher crop yields. Overall, the correlation matrix you sent suggests that there may be some weak relationships between some of the soil properties, weather factors, and crop prices.
+                </p>
+                <p><strong>Joint plot</strong></p>
+                <p>  <center><img src="assets/Zoomjoinplot.png" alt="joint plot"></center></p>
+                <p><small><center>Graph 5 - Zoomed join plot (Apendix graph 1) </centre></small></p>
+                <p>
+                   A 0.75 correlation coefficient between soil P (phosphorus) and soil K (potassium) in a correlation matrix indicates a moderately strong positive linear relationship between these two nutrients in the analyzed soil samples. A positive correlation coefficient[18] signifies that as the value of soil P increases, there's a tendency for the value of soil K also to increase. Conversely, if soil P decreases, soil K levels tend to decrease as well. But in the same way, N's correlation along with P and K is negative and weakly positive, indicating that as these two increase, N decreases. For instance, it may be that high pH leads to higher crop yields (and thus higher crop prices), but it may also be that farmers tend to add lime to soil with low pH and that the lime itself causes higher crop yields. Overall, the correlation matrix you sent suggests that there may be some weak relationships between some of the soil properties, weather factors, and crop prices.
+                </p>
+                <p>
+                    The data points concentrated towards the bottom of the K-P scatter plot indicate a positive skew in the distribution but with a lower bound for the combined K and P values. The positive skew reinforces the idea that most soil samples have lower combined K and P content than a potential maximum value. However, unlike a simple leftward shift, there is a minimum threshold for the combined K and P levels. This means that no samples fall below a certain level of these nutrients. Hence agricultural practices fertilizer a minimum amount of K and P ensuring a baseline level of these nutrients in the soil.
+                </p>
+                <p>
+                   The scatter plot of (N vs. P and P vs. K) suggests a lack of strong linear relationships. The observed square pattern further indicates that correlations, if present, are likely weak. This variability can be attributed to several factors. First, the samples might originate from diverse locations with distinct geological compositions, leading to inherent differences in nutrient baseline levels. Second, factors like drainage, climate, and organic matter decomposition can significantly influence the availability of these elements within the soil, contributing to the observed spread.
+                </p>
+
+                <hr class = "underline">
+
+                <h3 id = "Conclusions"><u>
+                    Conclusions
+                  </u></h3>
+                <p>
+                    The findings revealed dependencies between rainfall and various plant growth factors, supporting the idea that rainfall plays a significant role in plant health. However, pinpointing a universally optimal rainfall level for maximizing yield and profit proved inconclusive. This outcome underscores the complex interplay between rainfall and numerous external factors.
+                </p>
+                <p>
+                    As hypothesized, increasing rainfall generally improved plant growth by enhancing soil moisture content. However, excessive precipitation could have negative consequences, including nutrient leaching and increased humidity that could hinder plant development. These findings partially support the hypothesis, highlighting the intricate relationship between rainfall and plant growth. Future research efforts should explore these interactions in a controlled environment to isolate the specific effects of each variable and establish more precise recommendations for the stakeholders.
+
+                </p>
+                <p>
+                    
+                <hr class = "underline">
+
+                <h3 id = "References"><u>
+                    References
+                  </u></h3>
+
+               <p>
+                   [1]	“Knowing Soil NPK : Your Plants, Grow Better - Renke.” Accessed: Feb. 28, 2024. [Online]. Available: <a href = "https://www.renkeer.com/knowing-soil-npk-for-plants-grow-better/">here</a><br>
+               </p>
+                <p>
+                   [2]	A. Nayyar, “The challenges that India’s agriculture domain faces,” The Times of India. Accessed: Feb. 29, 2024. [Online]. Available:<a href = "https://timesofindia.indiatimes.com/blogs/voices/the-challenges-that-indias-agriculture-domain-faces/">here</a><br>
+                </p>
+                <p>
+                   [3]	P. Zhang, J. Zhang, and M. Chen, “Economic impacts of climate change on agriculture: The importance of additional climatic variables other than temperature and precipitation,” Journal of Environmental Economics and Management, vol. 83, pp. 8–31, May 2017, doi: 10.1016/j.jeem.2016.12.001.
+                </p>
+                <p>
+                    [4]	“Crop-Prediction-Data.” Accessed: Feb. 28, 2024. [Online]. Available:<a href = "https://www.kaggle.com/datasets/jiteshmd/crop-prediction-data">here</a><br>
+                </p>
+                <p>
+                   [5]	“Crop Recommendation Dataset.” Accessed: Feb. 05, 2024. [Online]. Available:<a href = "https://www.kaggle.com/datasets/siddharthss/crop-recommendation-dataset">here</a><br>
+                </p>
+                <p>
+                   [6]	N. H. Kulkarni, G. N. Srinivasan, B. M. Sagar, and N. K. Cauvery, “Improving Crop Productivity Through A Crop Recommendation System Using Ensembling Technique,” in 2018 3rd International Conference on Computational Systems and Information Technology for Sustainable Solutions (CSITSS), Dec. 2018, pp. 114–119. doi: 10.1109/CSITSS.2018.8768790.
+                </p>
+                <p>
+                   [7]	“The Role of Phosphorus in Plant Growth and Productivity | IFA’s Blog.” Accessed: Feb. 28, 2024. [Online]. Available: <a href = "https://grow.ifa.coop/agronomy/phosphorus-role-in-plant-growth-productivity">here</a><br>
+                </p>
+                <p>
+                   [8]	J. W. Ketcheson, “SOME EFFECTS OF SOIL TEMPERATURE ON PHOSPHORUS REQUIREMENTS OF YOUNG CORN PLANTS IN THE GREENHOUSE,” Can. J. Soil. Sci., vol. 37, no. 1, pp. 41–47, Feb. 1957, doi: 10.4141/cjss57-006.
+                </p>
+                <p>
+                   [9]	“Phosphorus Basics: Deficiency Symptoms, Sufficiency Ranges, and Common Sources,” Alabama Cooperative Extension System. Accessed: Feb. 28, 2024. [Online]. Available: <a href = "https://www.aces.edu/blog/topics/crop-production/phosphorus-basics-deficiency-symptoms-sufficiency-ranges-and-common-sources/">here</a><br>
+                </p>
+                <p>
+                   [10]	R. E. Luebs, G. Stanford, and A. D. Scott, “Relation of Available Potassium to Soil Moisture,” Soil Science Society of America Journal, vol. 20, no. 1, pp. 45–50, 1956, doi: 10.2136/sssaj1956.03615995002000010011x.
+                </p>
+                <p>
+                   [11]	“Potassium for crop production.” Accessed: Feb. 28, 2024. [Online]. Available: <a href = "https://extension.umn.edu/phosphorus-and-potassium/potassium-crop-production">here</a><br>
+                </p>
+                <p>
+                   [12]	M. E. Guntiñas, M. C. Leirós, C. Trasar-Cepeda, and F. Gil-Sotres, “Effects of moisture and temperature on net soil nitrogen mineralization: A laboratory study,” European Journal of Soil Biology, vol. 48, pp. 73–80, Jan. 2012, doi: 10.1016/j.ejsobi.2011.07.015.
+                </p>
+                <p>
+                   [13]	“The Connection Between Lawn Fertilization & Soil pH.” Accessed: Mar. 04, 2024. [Online]. Available:<a href = "https://www.whenappearancematters.com/blog-posts/the-connection-between-lawn-fertilization-soil-ph">here</a><br>
+                <p>
+                   [14]	“Soil pH & 4R Nutrient Stewardship,” Stephenson Service Company. Accessed: Mar. 04, 2024. [Online]. Available: <a href https="https://www.stephensonfs.com/Products-Services/Resource-Center/Resource-Detail/soil-ph-4r-nutrient-stewardship">here</a><br></a>
+                </p>
+                <p>
+                   [15]	A. Gailite, U. Andersone-Ozola, I. Samsone, A. Karlsons, and G. Ievinsh, “Ecophysiology of Endangered Plant Species Saussurea esthonica: Effect of Mineral Nutrient Availability and Soil Moisture,” Plants (Basel), vol. 12, no. 4, p. 888, Feb. 2023, doi: 10.3390/plants12040888.
+                </p>
+                <p>
+                   [16]	“Full details and actions for Python for Data Analysis: Data Wrangling With Pandas, NumPy, and Jupyter.” Accessed: Mar. 04, 2024. [Online]. Available: <a href = "https://www.vlebooks.com/Product/Index/2926917?page=0&startBookmarkId=-1">here</a><br>
+                </p>
+                <p>
+                   [17]	J. Sauro and J. R. Lewis, “Chapter 1 - Introduction and how to use this book,” in Quantifying the User Experience (Second Edition), J. Sauro and J. R. Lewis, Eds., Boston: Morgan Kaufmann, 2016, pp. 1–8. doi: 10.1016/B978-0-12-802308-2.00001-1.
+                </p>
+                <p>
+                   [18]	D. Mindrila, P. Balentyne, and M. Ed, “Scatterplots and Correlation”.
+                </p>
+                <p>
+                   [19]	Maths Tutorial: Interpreting Scatterplots (statistics), (Feb. 01, 2011). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href = "https://www.youtube.com/watch?v=PE_BpXTyKCE">here</a><br>
+                </p>
+                <p>
+                   [20]	Interpreting Heat Map Visualizations, (Jul. 22, 2015). Accessed: Mar. 04, 2024. [Online Video]. Available:<a href = "https://www.youtube.com/watch?v=VmlO-GIvEek">here</a><br>
+                </p>
+
+                <hr class = "underline">
+
+                <h3 id = "Apendix"><u>
+                    Apendix
+                  </u></h3>
+                <p>Apendix Graph 1 </p>
+                <p>  <center><img src="assets/joinplot.png" alt="joint plot"></center></p>
+                <p><small><center>Apendix Graph 1 - Whole joint plot grpah</centre></small></p>
+                <p>  <center><img src="assets/pHVsLable.png" alt="Box and Wisker Plot"></center></p>
+                <p><small><center>Apendix Graph 2 - Box and Wisker plot pH values for Crops</centre></small></p>
+
+
+
+                <sup style = "text-align: center;">
+                </sup>
+            </div>
+            <div class = "nav-area">
+                <img src = "assets/symbol.png" alt = "Agriculture" width = "90%">
+                <p> <center> Student No- 2306514 </center> </p>
+                <p> <center> <strong>Table of Contents </strong> </center> </p>
+                <p style = "line-height: 30px;text-align: left;border: 2px;border-color: rgb(16, 51, 22);border-style: solid;padding-top: 1px ;padding-left: 10px;padding-bottom: 10px;border-radius: 10px;">
+                    <a href = "#Abstract" class = "table">Abstract</a><br>
+                    <a href = "#Introduction" class = "table">Introduction</a><br>
+                    <a href = "#Literature Review" class = "table">Literature Review</a><br>
+                    <a href = "#Hypothesis" class = "table">Hypothesis</a><br>
+                    <a href = "#Methods" class = "table">Methods</a><br>
+                    <a href = "#Results" class = "table">Results</a><br>
+                    <a href = "#Conclusions" class = "table">Conclusions</a><br>
+                    <a href = "#References" class = "table">References</a>
+                    <a href = "#Apendix" class = "table">Apendix</a>
+                </p>
+            </div>
+        </body>
+    </html>

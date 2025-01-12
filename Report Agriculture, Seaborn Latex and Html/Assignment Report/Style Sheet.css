@@ -1,0 +1,93 @@
+body {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.Image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+h2, p {
+  text-align: left;
+  padding-left: 5px;
+  color: rgb(16, 51, 22);
+  line-height: 1.5;
+}
+h3 {
+  font-size: large;
+  padding-left: 5px;
+}
+hr.underline {
+  border: 1px solid rgb(16, 51, 22);
+  border-radius: 2px;
+}
+
+html, body.grid-container{
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 14% auto;
+  grid-template-rows: 12% auto;
+  gap: 0;
+}
+
+.header{
+  grid-column: 2;
+  grid-row: 1;
+  
+  padding: 5px;
+}
+.nav-area {
+  height: 100%;
+  border-right: 2px solid rgb(16, 51, 22);
+  border-radius: 5px;
+  padding-right: 1%;
+  position: fixed;
+  width: 13%;
+}
+.content {
+  grid-row: 2;
+  grid-column: 2;
+  margin: 0 10px;
+}
+.content *:first-child,
+.header *:first-child,
+.nav-area *:first-child {
+  margin: auto 0;
+}
+.Image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+a:hover{
+  color: rgb(31, 180, 30);
+
+}
+.Bibliography a {
+  color: #273e2c;
+  text-decoration: none;
+}
+.Bibliography a:hover{
+  color: rgb(31, 180, 30);
+  text-decoration: underline;   
+}
+.TableOfContents a{
+  color: #273e2c;
+  text-decoration: none;
+}
+.TableOfContents a:hover {
+  color: rgb(31, 180, 30);
+  text-decoration: underline;       
+}
