@@ -1,6 +1,7 @@
 # GitHub Portfolio
 
-Welcome to my GitHub portfolio! This repository is a showcase of my diverse projects, ranging from AI implementations to robotics and data analysis. Each project reflects my passion for learning and applying engineering, coding, and research skills to solve real-world problems.
+Welcome to my GitHub!
+I am Adithi, a second-year Robotics student at Falmouth University. This repo highlights a range of my projects, from AI and robotics to data analysis. I'm currently researching how to optimise genetic algorithms for maze-solving when the path is unknown to the agent, as well as exploring algorithm performance in the Santa Fe Trail problem. Alongside this, I'm working with my team on a robotic art installation for Falmouth Art Gallery's summer exhibit.
 
 ---
 
